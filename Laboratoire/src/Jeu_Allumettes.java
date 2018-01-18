@@ -145,14 +145,17 @@ public class Jeu_Allumettes {
             System.out.println();
             System.out.println("Voulez-vous rejouer? o/n");
             repRejouer = sc.next().toLowerCase();
-            if (repRejouer=="o")
+            if (repRejouer.equals("o"))
             {
-                rejouer = true;
+                rejouer = false;
                 finPartie = false;
                 repValide1 = false;
                 repValide2 = false;
+
+                nbAllum = (int) (Math.random() * 20) + 5;
+                System.out.println("Il y a présentement " + nbAllum + " allumettes");
             }
-            else if (repRejouer == "n")
+            else if (repRejouer.equals("n"))
             {
                 rejouer = true;
                 System.out.println("Merci d’avoir joué au jeu des allumettes, bonne journée !");
@@ -162,6 +165,7 @@ public class Jeu_Allumettes {
                 System.out.println("Voulez-vous rejouer? o/n");
             }
         }
+
 
     }
 }
