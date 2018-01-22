@@ -17,7 +17,7 @@ public class Jeu_Allumettes {
         Joueur joueur1 = new Joueur();
         Joueur joueur2 = new Joueur();
 
-        int nbAllum = (int) (Math.random() * 20) + 5;
+        int nbAllum = (int) (Math.random() * 81) + 20;
         System.out.println("Il y a présentement " + nbAllum + " allumettes");
         System.out.println();
         System.out.println();
